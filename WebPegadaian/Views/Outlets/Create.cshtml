@@ -1,0 +1,53 @@
+﻿@model WebPegadaian.Models.Outlet
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Create New Outlet</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-10">
+    <div class="card">
+        <div class="card-header">
+            <strong>Form</strong> Create Installment
+        </div>
+        <div class="card-body card-block">
+            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-3" })
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control col-md-3" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Village_Id, "Village_Id", htmlAttributes: new { @class = "control-label col-md-3" })
+                    @Html.DropDownList("Village_Id", null, htmlAttributes: new { @class = "form-control col-md-3" })
+                    @Html.ValidationMessageFor(model => model.Village_Id, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="row form-group">
+                    @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-3" })
+                    @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control " } })
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa fa-dot-circle-o"></i> Submit
+            </button>
+            <button type="reset" class="btn btn-danger btn-sm">
+                <i class="fa fa-ban"></i> Reset
+            </button>
+        </div>
+    </div>
+</div>

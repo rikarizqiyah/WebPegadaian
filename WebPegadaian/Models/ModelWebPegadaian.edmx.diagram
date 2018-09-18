@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc0ac59a39e2499fb9c2a5e636d9b28d" Name="Diagram1" ZoomLevel="46">
+        <EntityTypeShape EntityType="WebPegadaianModel.Detail_Business" Width="1.5" PointX="9.875" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Detail_Type_Vehicle" Width="1.5" PointX="16.625" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.District" Width="1.5" PointX="5.375" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Electronic" Width="1.5" PointX="14.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Gold" Width="1.5" PointX="15.125" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Gold_Saving" Width="1.5" PointX="14.375" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Handphone" Width="1.5" PointX="14.375" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Installment" Width="1.5" PointX="14.375" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Installment_type" Width="1.5" PointX="9.875" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Jewelry" Width="1.5" PointX="17.375" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Outlet" Width="1.5" PointX="9.875" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Precious_Metal" Width="1.5" PointX="14.375" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Product" Width="1.5" PointX="9.875" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Province" Width="1.5" PointX="0.875" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Regency" Width="1.5" PointX="3.125" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Role" Width="1.5" PointX="10.625" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.sysdiagram" Width="1.5" PointX="2.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Transaction" Width="1.5" PointX="12.125" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Type_Business_Financing" Width="1.5" PointX="14.375" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Type_Laptop" Width="1.5" PointX="14.375" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Type_Vehicle" Width="1.5" PointX="14.375" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.User" Width="1.5" PointX="12.875" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebPegadaianModel.Village" Width="1.5" PointX="7.625" PointY="9.625" IsExpanded="true" />
+        <AssociationConnector Association="WebPegadaianModel.FK_Business_Village" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_DETAIL_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_DETAIL_VEHICLE" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_District_Regency" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_Village_District" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_ELECTRONIC_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_DETAIL_JEWELRY_GOLD" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_GOLD_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_HANDPHONE_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_INSTALLMENT_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_TRANSACTION_INSTALLMENT_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_DETAIL_JEWELRY_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_Outlet_Village" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_TRANSACTION_OUTLET" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_PRECIOUS_METAL_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_TRANSACTION_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_Regencies_Provinces" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK__User__Role_Id__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_BUSINESS_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_LAPTOP_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_TRANSACTION_CUSTOMER" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_TRANSACTION_USER" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_VEHICLE_TRANSACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="WebPegadaianModel.FK_Users_Village" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

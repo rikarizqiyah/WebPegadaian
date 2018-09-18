@@ -1,0 +1,44 @@
+﻿@model WebPegadaian.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Create Product</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+    @Html.AntiForgeryToken()
+    <div class="col-lg-10">
+        <div class="card">
+            <div class="card-header">
+                <strong>Form</strong> Create Product
+            </div>
+            <div class="card-body card-block">
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="row form-group">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-3" })
+
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control col-md-3" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </button>
+            </div>
+        </div>
+    </div>
+            

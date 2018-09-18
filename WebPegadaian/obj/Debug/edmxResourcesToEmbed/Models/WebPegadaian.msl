@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebPegadaianModelStoreContainer" CdmEntityContainer="WebPegadaianEntities">
+    <EntitySetMapping Name="Detail_Business">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Detail_Business">
+        <MappingFragment StoreEntitySet="Detail_Business">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Business_Age" ColumnName="Business_Age" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Business_Financing_Id" ColumnName="Business_Financing_Id" />
+          <ScalarProperty Name="Village_Id" ColumnName="Village_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detail_Type_Vehicle">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Detail_Type_Vehicle">
+        <MappingFragment StoreEntitySet="Detail_Type_Vehicle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Police_Number" ColumnName="Police_Number" />
+          <ScalarProperty Name="Stnk_Number" ColumnName="Stnk_Number" />
+          <ScalarProperty Name="Machine_Number" ColumnName="Machine_Number" />
+          <ScalarProperty Name="Bpkb_Number" ColumnName="Bpkb_Number" />
+          <ScalarProperty Name="Bpkb_Owner" ColumnName="Bpkb_Owner" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+          <ScalarProperty Name="Type_Vehicle_Id" ColumnName="Type_Vehicle_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Electronics">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Electronic">
+        <MappingFragment StoreEntitySet="Electronic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Years_Of_Buy" ColumnName="Years_Of_Buy" />
+          <ScalarProperty Name="Market_Price" ColumnName="Market_Price" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Transaction_id" ColumnName="Transaction_id" />
+          <ScalarProperty Name="Type_Electronic" ColumnName="Type_Electronic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Golds">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Gold">
+        <MappingFragment StoreEntitySet="Gold">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Selling_Price" ColumnName="Selling_Price" />
+          <ScalarProperty Name="Purchase_Price" ColumnName="Purchase_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gold_Saving">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Gold_Saving">
+        <MappingFragment StoreEntitySet="Gold_Saving">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Account_Number" ColumnName="Account_Number" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Handphones">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Handphone">
+        <MappingFragment StoreEntitySet="Handphone">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Years_Of_Buy" ColumnName="Years_Of_Buy" />
+          <ScalarProperty Name="Selling_Price" ColumnName="Selling_Price" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Installments">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Installment">
+        <MappingFragment StoreEntitySet="Installment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Installment_Date" ColumnName="Installment_Date" />
+          <ScalarProperty Name="Due_Date" ColumnName="Due_Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Installment_Amount" ColumnName="Installment_Amount" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Installment_type">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Installment_type">
+        <MappingFragment StoreEntitySet="Installment_type">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jewelries">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Jewelry">
+        <MappingFragment StoreEntitySet="Jewelry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+          <ScalarProperty Name="Gold_Id" ColumnName="Gold_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Outlets">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Outlet">
+        <MappingFragment StoreEntitySet="Outlet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Village_Id" ColumnName="Village_Id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Precious_Metal">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Precious_Metal">
+        <MappingFragment StoreEntitySet="Precious_Metal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Selling_Price" ColumnName="Selling_Price" />
+          <ScalarProperty Name="Purchase_Price" ColumnName="Purchase_Price" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Transaction">
+        <MappingFragment StoreEntitySet="Transaction">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+          <ScalarProperty Name="Installment_Type_Id" ColumnName="Installment_Type_Id" />
+          <ScalarProperty Name="Outlet_Id" ColumnName="Outlet_Id" />
+          <ScalarProperty Name="Transaction_Date" ColumnName="Transaction_Date" />
+          <ScalarProperty Name="Administrative_Cost" ColumnName="Administrative_Cost" />
+          <ScalarProperty Name="Loan_Amount" ColumnName="Loan_Amount" />
+          <ScalarProperty Name="Approved_Date" ColumnName="Approved_Date" />
+          <ScalarProperty Name="Approved_Status" ColumnName="Approved_Status" />
+          <ScalarProperty Name="Accepted_Date" ColumnName="Accepted_Date" />
+          <ScalarProperty Name="Accepted_Status" ColumnName="Accepted_Status" />
+          <ScalarProperty Name="Remaining_Amount" ColumnName="Remaining_Amount" />
+          <ScalarProperty Name="User_Create" ColumnName="User_Create" />
+          <ScalarProperty Name="Cust_Id" ColumnName="Cust_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Business_Financing">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Type_Business_Financing">
+        <MappingFragment StoreEntitySet="Type_Business_Financing">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Capital_Requirement" ColumnName="Capital_Requirement" />
+          <ScalarProperty Name="Business_Type" ColumnName="Business_Type" />
+          <ScalarProperty Name="Turnover" ColumnName="Turnover" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Laptop">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Type_Laptop">
+        <MappingFragment StoreEntitySet="Type_Laptop">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Harddisk_Capacity" ColumnName="Harddisk_Capacity" />
+          <ScalarProperty Name="Years_Of_Buy" ColumnName="Years_Of_Buy" />
+          <ScalarProperty Name="Selling_Price" ColumnName="Selling_Price" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Vehicle">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Type_Vehicle">
+        <MappingFragment StoreEntitySet="Type_Vehicle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vehicle_Type" ColumnName="Vehicle_Type" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Cylinder" ColumnName="Cylinder" />
+          <ScalarProperty Name="Years_Of_Buy" ColumnName="Years_Of_Buy" />
+          <ScalarProperty Name="Market_Price" ColumnName="Market_Price" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="WebPegadaianModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Identity_Type" ColumnName="Identity_Type" />
+          <ScalarProperty Name="Identity_Number" ColumnName="Identity_Number" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Born_Place" ColumnName="Born_Place" />
+          <ScalarProperty Name="Born_Date" ColumnName="Born_Date" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Village_Id" ColumnName="Village_Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Number_Npwp" ColumnName="Number_Npwp" />
+          <ScalarProperty Name="Picture_Npwp" ColumnName="Picture_Npwp" />
+          <ScalarProperty Name="Picture_Identity" ColumnName="Picture_Identity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Villages">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Village">
+        <MappingFragment StoreEntitySet="Village">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="District_Id" ColumnName="District_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="WebPegadaianModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Regency_Id" ColumnName="Regency_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regencies">
+      <EntityTypeMapping TypeName="WebPegadaianModel.Regency">
+        <MappingFragment StoreEntitySet="Regency">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Province_Id" ColumnName="Province_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
