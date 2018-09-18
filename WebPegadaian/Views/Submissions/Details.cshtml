@@ -1,0 +1,122 @@
+﻿@model WebPegadaian.Models.Transaction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Administrative_Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Administrative_Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Loan_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Loan_Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Approved_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Approved_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Approved_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Approved_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accepted_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accepted_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accepted_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accepted_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remaining_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remaining_Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Installment_type.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Installment_type.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outlet.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outlet.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User1.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

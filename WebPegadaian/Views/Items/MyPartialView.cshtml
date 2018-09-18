@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebPegadaian.Models.Outlet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <a href='javascript:getView();'>Get Partial View</a>
+        <script type="text/javascript">
+            function getView() {
+                $('#divResult').load("@Url.Action("GetView" , "Items" )");
+            }
+        </script>
+        <div id='divResult'>
+        </div>
+    </div><!-- .animated -->
+</div><!-- .content -->
