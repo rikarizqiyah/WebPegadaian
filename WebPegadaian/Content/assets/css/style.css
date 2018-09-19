@@ -99,6 +99,7 @@ img {
 
 aside.left-panel {
   background: #272c33;
+  /*background: #04B404;*/
   display: table-cell;
   height: 100vh;
   min-height: 100%;

@@ -146,6 +146,7 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="WebPegadaianModel.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>

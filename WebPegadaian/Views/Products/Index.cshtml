@@ -21,7 +21,8 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        @Html.ActionLink("Create Product", "Create")
+                        <a href="@Url.Action("Create", "Products", "Create") type=" button" class="btn btn-primary">Create</a>
+                        @*@Html.ActionLink("Create Product", "Create")*@
                     </div>
                     <div class="card-body">
                         <table id="bootstrap-data-table" class="table table-striped table-bordered">
@@ -29,6 +30,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Name</th>
+                                    <th>Description</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -38,10 +40,10 @@
                                     <tr>
                                         <td></td>
                                         <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                                        
+                                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
                                         <td>
-                                            <a type="button" class="btn btn-warning" href="@Url.Action("Edit", "Edit", new { id = item.Id })">Edit</a>
-                                            <a type="button" class="btn btn-danger" href="@Url.Action("Delete", "Delete", new { id = item.Id })">Danger</a>
+                                            <a type="button" class="btn btn-warning" href="@Url.Action("Edit", "Products", new { id = item.Id })">Edit</a>
+                                            <a type="button" class="btn btn-danger" id="isConfirm" href="@Url.Action("Delete", "Products", new { id = item.Id })">Delete</a>
                                         </td>
                                     </tr>
                                 }
@@ -55,3 +57,24 @@
         </div>
     </div><!-- .animated -->
 </div><!-- .content -->
+
+<script>
+swal({
+  title: "Are you sure?",
+  text: "You will not be able to recover this imaginary file!",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#DD6B55",
+  confirmButtonText: "Yes, delete it!",
+  cancelButtonText: "No, cancel!",
+  closeOnConfirm: false,
+  closeOnCancel: false
+},
+function(isConfirm){
+  if (isConfirm) {
+    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+  } else {
+    swal("Cancelled", "Your imaginary file is safe :)", "error");
+  }
+});
+</script>
